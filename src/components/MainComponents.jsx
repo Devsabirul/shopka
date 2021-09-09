@@ -5,6 +5,7 @@ import Header from './header/Header';
 import Login from './login/Login';
 import Card from './shop/Card'
 import PrivateRoute from './login/PrivateRoute'
+import FooterBottom from '../footer/FooterBottom';
 
 const MainComponents = () => {
     return (
@@ -21,7 +22,7 @@ const MainComponents = () => {
                     <Card />
                 </PrivateRoute>
             </Switch>
-
+            <FooterBottom />
         </>
     );
 };

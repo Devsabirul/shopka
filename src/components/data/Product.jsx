@@ -6,7 +6,7 @@ const Product = [
         discription: "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
         rating: "4.05",
         price: 40.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvZTAxYzc1NTIyOTgzLTEyOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiJhdXRvIiwiaGVpZ2h0IjoiYXV0byIsImZpdCI6ImNvbnRhaW4ifSwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX0sImZsYXR0ZW4iOnRydWUsImpwZWciOnsicXVhbGl0eSI6MTAwfX19",
+        img: "image/9.jpg",
         category: "clothing",
     },
     {
@@ -16,7 +16,7 @@ const Product = [
         discription: "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
         rating: "4.05",
         price: 549.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvYWJiYmJhNDE5YmUyLTE2LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ImF1dG8iLCJoZWlnaHQiOiJhdXRvIiwiZml0IjoiY29udGFpbiJ9LCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfSwiZmxhdHRlbiI6dHJ1ZSwianBlZyI6eyJxdWFsaXR5IjoxMDB9fX0=",
+        img: "image/1.jpg",
         category: "dell",
     },
     {
@@ -26,7 +26,7 @@ const Product = [
         discription: "et gusto sed quo inure voluptuary ocreate omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
         rating: "4.05",
         price: 490.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvOGQwMDZiNDk0Y2I2LTE1LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ImF1dG8iLCJoZWlnaHQiOiJhdXRvIiwiZml0IjoiY29udGFpbiJ9LCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfSwiZmxhdHRlbiI6dHJ1ZSwianBlZyI6eyJxdWFsaXR5IjoxMDB9fX0=",
+        img: "image/4.jpg",
         category: "dell",
     },
     {
@@ -36,7 +36,7 @@ const Product = [
         discription: "ullam reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
         rating: "4.05",
         price: 609.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvODU3NDFiODhkOGNhLTMyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ImF1dG8iLCJoZWlnaHQiOiJhdXRvIiwiZml0IjoiY29udGFpbiJ9LCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfSwiZmxhdHRlbiI6dHJ1ZSwianBlZyI6eyJxdWFsaXR5IjoxMDB9fX0=",
+        img: "image/6.jpg",
         category: "accessories",
     },
     {
@@ -46,7 +46,7 @@ const Product = [
         discription: "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
         rating: "4.05",
         price: 549.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvMjRmZDQ5ZGJkM2NmLTEwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ImF1dG8iLCJoZWlnaHQiOiJhdXRvIiwiZml0IjoiY29udGFpbiJ9LCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfSwiZmxhdHRlbiI6dHJ1ZSwianBlZyI6eyJxdWFsaXR5IjoxMDB9fX0=",
+        img: "image/5.jpg",
         category: "dell",
     },
     {
@@ -56,7 +56,7 @@ const Product = [
         discription: "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae",
         rating: "4.05",
         price: 480.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvZjQwOTQ1YTNkMDQzLTY3NzBlOTJjOGIyNS1wbWIxNC1yZW1vdmViZy1wcmV2aWV3LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ImF1dG8iLCJoZWlnaHQiOiJhdXRvIiwiZml0IjoiY29udGFpbiJ9LCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfSwiZmxhdHRlbiI6dHJ1ZSwianBlZyI6eyJxdWFsaXR5IjoxMDB9fX0=",
+        img: "image/2.jpg",
         category: "accessories",
     },
     {
@@ -66,7 +66,7 @@ const Product = [
         discription: "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae",
         rating: "4.05",
         price: 409.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvNzRmNTc0NDIyNmQwLTIxLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ImF1dG8iLCJoZWlnaHQiOiJhdXRvIiwiZml0IjoiY29udGFpbiJ9LCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfSwiZmxhdHRlbiI6dHJ1ZSwianBlZyI6eyJxdWFsaXR5IjoxMDB9fX0=",
+        img: "image/7.jpg",
         category: "accessories",
     },
     {
@@ -76,7 +76,7 @@ const Product = [
         discription: "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
         rating: "4.05",
         price: 490.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvNGNkMzEzOGMxMzNiLTgucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoiYXV0byIsImhlaWdodCI6ImF1dG8iLCJmaXQiOiJjb250YWluIn0sImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9LCJmbGF0dGVuIjp0cnVlLCJqcGVnIjp7InF1YWxpdHkiOjEwMH19fQ==",
+        img: "image/10.jpg",
         category: "clothing",
     },
     {
@@ -86,7 +86,7 @@ const Product = [
         discription: "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
         rating: "4.05",
         price: 549.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJ3YXRlcm1hcmtlZC8yMDE4LTEyLTE4XzA1MTk1Ny4xNTM2MDJXaGl0ZV9Db2xvcl9Tb2xpZF9ULVNoaXJ0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ImF1dG8iLCJoZWlnaHQiOiJhdXRvIiwiZml0IjoiY29udGFpbiJ9LCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfSwiZmxhdHRlbiI6dHJ1ZSwianBlZyI6eyJxdWFsaXR5IjoxMDB9fX0=",
+        img: "image/9.jpg",
         category: "clothing",
     },
     {
@@ -96,7 +96,7 @@ const Product = [
         discription: "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi",
         rating: "4.05",
         price: 95.40,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvZTAxYzc1NTIyOTgzLTEyOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiJhdXRvIiwiaGVpZ2h0IjoiYXV0byIsImZpdCI6ImNvbnRhaW4ifSwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX0sImZsYXR0ZW4iOnRydWUsImpwZWciOnsicXVhbGl0eSI6MTAwfX19",
+        img: "image/10.jpg",
         category: "clothing",
     },
     {
@@ -106,7 +106,7 @@ const Product = [
         discription: "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio",
         rating: "4.05",
         price: 40.00,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvNjlhMzUzY2M5ZjAyLTEucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoiYXV0byIsImhlaWdodCI6ImF1dG8iLCJmaXQiOiJjb250YWluIn0sImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9LCJmbGF0dGVuIjp0cnVlLCJqcGVnIjp7InF1YWxpdHkiOjEwMH19fQ==",
+        img: "image/11.jpg",
         category: "clothing",
     },
     {
@@ -116,7 +116,7 @@ const Product = [
         discription: "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam",
         rating: "4.05",
         price: 58.50,
-        img: "https://df17fp68uwcso.cloudfront.net/eyJidWNrZXQiOiJtZWRpYS5ldmFseS5jb20uYmQiLCJrZXkiOiJtZWRpYS9pbWFnZXMvNGNkMzEzOGMxMzNiLTgucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoiYXV0byIsImhlaWdodCI6ImF1dG8iLCJmaXQiOiJjb250YWluIn0sImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9LCJmbGF0dGVuIjp0cnVlLCJqcGVnIjp7InF1YWxpdHkiOjEwMH19fQ==",
+        img: "image/12.jpg",
         category: "clothing",
     },
     // {
