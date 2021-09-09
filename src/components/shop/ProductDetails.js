@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         fontWeight: "bold",
         marginTop: "5px",
         fontSize: "20px",
-    }
+    },
 });
 const ProductDetails = ({ data }) => {
     const classes = useStyles();

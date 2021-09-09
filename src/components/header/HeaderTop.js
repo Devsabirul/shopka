@@ -94,7 +94,7 @@ const HeaderTop = () => {
                 <Toolbar className="container-fluid">
                     <div className="header_top_left" >
                         <h4>SHOPKA</h4>
-                        <Link className={classes.disNone} to="/">Sell on Shopka</Link>
+                        <Link className={classes.disNone} to="/">Buy on Shopka</Link>
                         {
                             !loggedIn && <Link to="/login">Register</Link>
                         }
