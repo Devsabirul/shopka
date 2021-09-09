@@ -1,0 +1,52 @@
+.header_top_left{
+    color: rgb(0, 17, 173);
+    cursor: pointer;
+    display:flex;
+    align-items:center;
+}
+.header_top_left a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    margin-top: -8px;
+}
+.header_top_left a:hover {
+    color: black;
+}
+.container-fluid {
+    box-shadow: 0px 5px 5px -8px;
+}
+.search input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 12px;
+    width: 50ch;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+.MuiButtonBase-root:hover {
+    background: none !important;
+}
+.button {
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 1px solid #4CAF50;
+    border-radius: 12px;
+}
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+/* header to style end */
+span.MuiBottomNavigationAction-wrapper svg {
+    font-size: 25px;
+}

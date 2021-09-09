@@ -1,0 +1,32 @@
+.left_container{
+    margin-top: 15px;
+}
+
+.MuiTypography-root.MuiTreeItem-label.MuiTypography-body1 {
+    margin-top: 10px;
+}
+.collapsed_filters {
+    /* height: 42vh; */
+    background: rgba(224, 224, 224, 0.329);
+    padding: 15px;
+    margin-top: 20px;
+    width: 90%;
+}
+/* laft style component end  */
+.right_container{
+    box-shadow: 0px 0px 1px 0px;
+    margin-top: 15px;
+    padding: 15px;
+}
+.filter_list {
+    padding: 2px 10px;
+    border: 1px solid rgb(202, 202, 202);
+    margin: 3px;
+    border-radius: 5px;
+}
+ul.MuiList-root.MuiMenu-list li {
+    background: none;
+}
+.active{
+    color: red !important;
+}
