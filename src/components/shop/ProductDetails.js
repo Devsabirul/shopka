@@ -27,7 +27,7 @@ const ProductDetails = ({ data }) => {
                 <div class="card card_container">
                     <img className={classes.media} src={img} class="card-img-top" alt="..." />
                     <div class="card-body">
-                        <h5 class="card-title">{title.slice(0, 15)}...</h5>
+                        <h5 style={{ cursor: "pointer" }} class="card-title">{title.slice(0, 15)}...</h5>
                         <p class="card-text">{discription.slice(0, 40)}...</p>
                         <p style={{ fontWeight: "600", lineHeight: "5px", }} >Rating: {rating}★</p>
                         <p className={classes.price} >Price: $ {price}</p>
