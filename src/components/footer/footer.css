@@ -181,3 +181,12 @@ ul.footer-links li a {
     font-weight:600
   }
 }
+
+
+/* for positon fixed */
+/* footer.site-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+} */

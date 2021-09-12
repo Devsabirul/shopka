@@ -1,5 +1,5 @@
 import { Button, } from '@material-ui/core';
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import './style.css'
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
         fontSize: "20px",
     },
 });
-const ProductDetails = ({ data }) => {
+const ProductDetails = ({ data, addToCardHandle }) => {
     const classes = useStyles();
     const { discription, title, price, rating, img } = data;
     return (
@@ -31,7 +31,7 @@ const ProductDetails = ({ data }) => {
                         <p class="card-text">{discription.slice(0, 40)}...</p>
                         <p style={{ fontWeight: "600", lineHeight: "5px", }} >Rating: {rating}★</p>
                         <p className={classes.price} >Price: $ {price}</p>
-                        <Button size="small" variant="outlined" startIcon={<ShoppingBasketIcon />} color="primary">
+                        <Button onClick={() => addToCardHandle(data)} size="small" variant="outlined" startIcon={<ShoppingBasketIcon />} color="primary">
                             Add to Card
                         </Button>
                     </div>

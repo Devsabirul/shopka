@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { productContest } from '../../App'
+import { cardAddedDetails, productContest } from '../../App'
 import ProductDetails from './ProductDetails'
 import { ToggleButtonGroup, ToggleButton } from '@material-ui/lab';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
@@ -17,9 +17,15 @@ const Products = () => {
     const classes = styles()
     const [products, setProducts] = useContext(productContest)
     const [alignment, setAlignment] = React.useState('left');
+    const [card, setCard] = useContext(cardAddedDetails)
     const handleAlignment = (event, newAlignment) => {
         setAlignment(newAlignment);
     };
+    const addToCardHandle = product => {
+        const newCard = [...card, product]
+        setCard(newCard)
+    }
+    console.log(card)
     return (
         <>
             <div className="d-flex justify-content-between">
@@ -49,7 +55,11 @@ const Products = () => {
                 </div>
             </div>
             {
-                products.map(product => <ProductDetails key={product.id} data={product} />
+                products.map(product => <ProductDetails
+                    key={product.id}
+                    data={product}
+                    addToCardHandle={addToCardHandle}
+                />
                 )
             }
         </>

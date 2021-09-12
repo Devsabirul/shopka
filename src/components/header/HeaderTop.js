@@ -5,10 +5,11 @@ import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import './style.css'
 import { InputBase, MenuItem, Toolbar, Badge, Avatar } from '@material-ui/core';
-import { authContext, UserContext } from '../../App';
+import { authContext, cardAddedDetails, UserContext } from '../../App';
 //firebase
 import { firebaseConfig } from '../login/Config'
 import { getAuth, signOut } from "firebase/auth";
+
 
 const styles = makeStyles((theme) => ({
     container: {
@@ -72,6 +73,9 @@ const HeaderTop = () => {
     const classes = styles()
     const [loggedIn, setLoggedIn] = useContext(UserContext)
     const [user, setUser] = useContext(authContext)
+    //card Details 
+    const [card, setCard] = useContext(cardAddedDetails)
+    //end Card Details
     const { photo } = user;
     const history = useHistory()
     //firebase signOut 
@@ -94,7 +98,7 @@ const HeaderTop = () => {
                 <Toolbar className="container-fluid">
                     <div className="header_top_left" >
                         <h4>SHOPKA</h4>
-                        <Link className={classes.disNone} to="/">Buy on Shopka</Link>
+                        <Link className={classes.disNone} to="/">Buy From Shopka</Link>
                         {
                             !loggedIn && <Link to="/login">Register</Link>
                         }
@@ -113,7 +117,7 @@ const HeaderTop = () => {
                         {
                             loggedIn ? <NavLink to="/" className="button" onClick={signOutHandler}>Sign Out</NavLink> : <NavLink to="/login" className="button" > Sign in</NavLink>
                         }
-                        <Badge badgeContent={4} color="secondary" onClick={pushHandler} >
+                        <Badge badgeContent={card.length} color="secondary" onClick={pushHandler} >
                             <ShoppingCartIcon style={{ marginLeft: "20px", cursor: "pointer" }} />
                         </Badge>
 

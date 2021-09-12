@@ -1,59 +1,56 @@
 import { Grid } from '@material-ui/core';
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { cardAddedDetails } from '../../App';
+import CardDetails from './CardDetails';
+import './card.css'
 
 const Card = () => {
+    const [card, setCard] = useContext(cardAddedDetails)
+
+    const removeFromCard = id => {
+        const newCard = card.filter(product => product.id !== id)
+        setCard(newCard)
+    }
+    console.log(card)
     return (
         <div className="container">
             <Grid container>
                 <Grid item sm={12} md={8} lg={8}>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://retaildesignblog.net/wp-content/uploads/2020/08/00_Designliga_Porsche_NOW_Retail_Design-780x520.jpg" class="img-fluid rounded-start" alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://retaildesignblog.net/wp-content/uploads/2020/08/00_Designliga_Porsche_NOW_Retail_Design-780x520.jpg" class="img-fluid rounded-start" class="img-fluid rounded-start" alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://retaildesignblog.net/wp-content/uploads/2020/08/00_Designliga_Porsche_NOW_Retail_Design-780x520.jpg" class="img-fluid rounded-start" class="img-fluid rounded-start" alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        card.map(card => <CardDetails
+                            id={card.id}
+                            card={card}
+                            removeFromCard={removeFromCard}
+                        />)
+                    }
                 </Grid>
                 <Grid item sm={12} md={4} lg={4}>
-                    this is checout page
+                    <div className="shop_card">
+                        <h3 className="text-center">Order Summary</h3>
+                        <p>Items ordered: {card.length} </p>
+                        <table className="customers">
+                            <tr>
+                                <td>Items</td>
+                                <td>$ </td>
+                            </tr>
+                            <tr>
+                                <td>Shipping & Handling</td>
+                                <td> $ </td>
+                            </tr>
+                            <tr>
+                                <td>Total tax</td>
+                                <td>$ </td>
+                            </tr>
+                            <tr className="total_price">
+                                <td>Order Total:</td>
+                                <td>$</td>
+                            </tr>
+                        </table>
+                        <Link to="/checkout" className="proceed_to_checkout"> Proceed to Checkout</Link>
+                    </div>
                 </Grid>
             </Grid>
-
         </div>
     );
 };

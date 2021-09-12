@@ -5,7 +5,8 @@ import Header from './header/Header';
 import Login from './login/Login';
 import Card from './shop/Card'
 import PrivateRoute from './login/PrivateRoute'
-import FooterBottom from '../footer/FooterBottom';
+import FooterBottom from './footer/FooterBottom';
+import Checkout from './checkout/Checkout';
 
 const MainComponents = () => {
     return (
@@ -21,6 +22,9 @@ const MainComponents = () => {
                 <PrivateRoute exact path="/card">
                     <Card />
                 </PrivateRoute>
+                <Route exact path="/checkout" >
+                    <Checkout />
+                </Route>
             </Switch>
             <FooterBottom />
         </>

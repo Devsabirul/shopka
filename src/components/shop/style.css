@@ -25,3 +25,11 @@ ul.related_category li {
     display:none !important;
 }
 }
+
+/* card Quantity */
+select.selectFiled {
+    padding: 5px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 15%;
+}

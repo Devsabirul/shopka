@@ -61,7 +61,7 @@ const Login = () => {
     //react router protected 
     const history = useHistory();
     const location = useLocation();
-    const { from } = location.state || { from: { pathname: "/card" } };
+    const { from } = location.state || { from: { pathname: "/" } };
     const [logInInfo, setLogInInfo] = useState(false)
     // firebase authentication
     const formSubmit = (e) => {
