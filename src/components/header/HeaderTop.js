@@ -69,7 +69,7 @@ const styles = makeStyles((theme) => ({
     },
     homeDir: {
         color: "blue !important",
-        fontSize: "25px",
+        fontSize: "20px",
         fontWeight: "bold",
     }
 }))
