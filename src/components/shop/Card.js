@@ -12,7 +12,25 @@ const Card = () => {
         const newCard = card.filter(product => product.id !== id)
         setCard(newCard)
     }
-    console.log(card)
+    const total = card.reduce((total, product) => total + product.price, 0);
+    let shipping = 0;
+    if (total > 350) {
+        shipping = 0;
+    }
+    else if (total > 15) {
+        shipping = 4.5
+    }
+    else if (total > 0) {
+        shipping = 0;
+    }
+
+    //Add Tax 
+    const tax = total / 10;
+
+    const formateNumber = num => {
+        const precision = num.toFixed(2)
+        return Number(precision);
+    }
     return (
         <div className="container">
             <Grid container>
@@ -32,19 +50,19 @@ const Card = () => {
                         <table className="customers">
                             <tr>
                                 <td>Items</td>
-                                <td>$ </td>
+                                <td>$ {formateNumber(total)}</td>
                             </tr>
                             <tr>
                                 <td>Shipping & Handling</td>
-                                <td> $ </td>
+                                <td> $ {formateNumber(shipping)}</td>
                             </tr>
                             <tr>
                                 <td>Total tax</td>
-                                <td>$ </td>
+                                <td>$ {formateNumber(tax)}</td>
                             </tr>
                             <tr className="total_price">
                                 <td>Order Total:</td>
-                                <td>$</td>
+                                <td>${formateNumber(total + shipping + tax)}</td>
                             </tr>
                         </table>
                         <Link to="/checkout" className="proceed_to_checkout"> Proceed to Checkout</Link>

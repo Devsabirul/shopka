@@ -3,7 +3,7 @@ import React from 'react';
 const Checkout = () => {
     return (
         <>
-            This is from checkout
+            <h1 style={{ color: "green", textAlign: "center" }} className="my-5" > LOADING......... </h1>
         </>
     );
 };

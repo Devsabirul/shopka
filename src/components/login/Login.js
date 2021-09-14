@@ -7,7 +7,7 @@ import { authContext, UserContext } from '../../App';
 import MuiAlert from '@material-ui/lab/Alert';
 //firebase component
 import { firebaseConfig } from './Config'
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, sendEmailVerification } from "firebase/auth";
 import { useHistory, useLocation } from 'react-router-dom';
 const styles = makeStyles(theme => ({
     loginHeader: {
@@ -102,6 +102,7 @@ const Login = () => {
                     newUserInfo.email = email
                     setUser(newUserInfo)
                     setLoggedIn(true)
+                    sendVerification()
                     history.replace(from);
                 }).catch((error) => {
                     // const isEmailError = true;
@@ -129,6 +130,15 @@ const Login = () => {
             // An error occurred
             // ...
         });
+    }
+    //Send Verification Code
+    const sendVerification = () => {
+        const auth = getAuth();
+        sendEmailVerification(auth.currentUser)
+            .then(() => {
+                // Email verification sent!
+                // ...
+            });
     }
     // google authentication
     const provider = new GoogleAuthProvider();

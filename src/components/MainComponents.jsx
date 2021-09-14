@@ -22,9 +22,9 @@ const MainComponents = () => {
                 <PrivateRoute exact path="/card">
                     <Card />
                 </PrivateRoute>
-                <Route exact path="/checkout" >
+                <PrivateRoute exact path="/checkout" >
                     <Checkout />
-                </Route>
+                </PrivateRoute>
             </Switch>
             <FooterBottom />
         </>
