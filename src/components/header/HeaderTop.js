@@ -66,6 +66,11 @@ const styles = makeStyles((theme) => ({
         [theme.breakpoints.down("xs")]: {
             display: "none",
         }
+    },
+    homeDir: {
+        color: "blue !important",
+        fontSize: "25px",
+        fontWeight: "bold",
     }
 }))
 
@@ -97,7 +102,7 @@ const HeaderTop = () => {
             <div className="navbar navbar-expand-lg">
                 <Toolbar className="container-fluid">
                     <div className="header_top_left" >
-                        <h4>SHOPKA</h4>
+                        <Link to="/" className={classes.homeDir}>SHOPKA</Link>
                         <Link className={classes.disNone} to="/">Buy From Shopka</Link>
                         {
                             !loggedIn && <Link to="/login">Register</Link>
